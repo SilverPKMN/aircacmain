@@ -2,23 +2,30 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(224, 224, 224, 0.918);
+    background-image: linear-gradient(to bottom, rgba(85, 176, 250, 0.808),rgba(126, 126, 126, 0.548));
+    background-size: cover;
 }
 
 .nav-item {
     text-decoration: none;
     padding: 0px;
-    color: rgb(0, 152, 240);
     transition: all ease 0s;
     font-size: 23px;
-    text-shadow: 0px 0px 20px #65adb9;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+    background: -webkit-linear-gradient(#0000009d, #13131373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-item:hover {
-    color: rgb(220, 245, 255);
-    text-shadow: 0px 1px 50px #006eff;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 20px #000000c0;
 }
 
 li {
@@ -26,16 +33,21 @@ li {
 }
 
 .nav-btn {
-    background-color: rgb(32, 143, 207);
+    color: white;
     border: none;
     border-radius: 55px;
     cursor: pointer;
     margin: 0px 5px;
-    color: rgb(255, 255, 255);
     width: 115px;
     height: 45px;
     font-size: 18px;
     transition: all ease 0.2s;
+    background: rgba(0, 81, 255, 0.616);
+    box-shadow: 0 50px 60px 8px rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(0, 0, 0, 0.527);
+
 }
 
 .nav-btn:hover {
@@ -47,12 +59,14 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.89);
     border-radius: 30px;
-    box-shadow: 0px 0px 5px 0px;
     padding: 0px;
     margin: 10px;
-    box-shadow: 0px 0px 10px 1px #0060ceab;
+    background: rgba(252, 252, 252, 0.507);
+    box-shadow: 0px 3px 20px 3px rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .logo {
@@ -62,7 +76,7 @@ li {
     cursor: pointer;
 }
 
-h1 {
+.logo-text {
     color: #0084ffe3;
     position: absolute;
     left: 5%;
@@ -71,19 +85,24 @@ h1 {
 
 main {
     display: block;
-    background-color: #000000;
-    padding: 100px;
-    border-radius: 50px;
-    color: white;
-    box-shadow: 0px 0px 10px 1px #0060ceab;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 18px;
+    color: rgba(26, 26, 26, 0.815);
+    background: rgba(252, 252, 252, 0.418);
+    box-shadow: 0 50px 60px 8px rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 
 .users-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 0px;
+    justify-content: space-evenly;
+    margin-bottom: -5px;
+    margin: 0px 508px;
 }
 
 
@@ -91,7 +110,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 74, 212);
+    background-color: rgb(0, 136, 247);
     border: none;
     border-radius: 55px;
     cursor: pointer;
@@ -100,16 +119,56 @@ main {
     height: 50px;
     font-size: 18px;
     transition: all ease 0.2s;
+    box-shadow: 0px 1px 3px 0px #000000bb;
+    background-image: linear-gradient(to bottom, rgb(94, 223, 255),rgba(114, 18, 204, 0.651));
 }
 
 .starthere-btn:hover {
     color: rgb(0, 0, 0);
-    background-color: #0060ddbb;
+    transform: translate(0px, -2px);
+    animation: ring 1.5s infinite;
+    box-shadow: 0px 2px 8px 0px;
+    box-shadow: 0px 1px 3px 0px #000000ec;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.938),rgba(255, 255, 255, 0.74));
 }
 
 
 .btn-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 0px 500px;
+}
+
+.content-header {
+    text-shadow: 0px .2px 2px rgba(24, 76, 153, 0.329);
+    background: -webkit-linear-gradient(#050505cb, #33333341);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+    color: rgba(92, 92, 92, 0.76);
+    font-size: 30px;
+    background: -webkit-linear-gradient(#b3b3b3a8, #575757b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 50px;
+    background: -webkit-linear-gradient(#0077ff, #c943b771);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
